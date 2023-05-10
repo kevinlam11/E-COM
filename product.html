@@ -1,143 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Dear Osaka</title>
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
-</head>
-<!--  BACKGROUND  -->
-
-<body class="bg2" background="assets/sushi2.AVIF">
-  <!--   NAV BAR  -->
-  <nav>
-    <div class="navbar">
-      <div class="logo">
-        <a href="index.html">
-          <img class="hero" src="assets/osaka.AVIF" alt="osaka">
-      </div>
-      <div class="link">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </nav>
-  <!-- BODY AND INTRO  -->
-
-  <section class="product-list">
-    <div>
-      <h1 class="align-center">Menu</h1>
-    </div>
-
-    <div class="product-container">
-      <!-- PRODUCT -->
-
-      <div class="card">
-        <div class="title">Classic Roll A</div>
-        <div class="image"><img src="assets/1.AVIF" alt="Classic Roll A" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tokyo JDM</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+    </style>
+  </head>
+  <!-- BACKGROUND  -->
+  <body class="bg2">
+    <!--   NAV BAR  -->
+    <nav>
+      <div class="navbar">
+        <div class="link">
+          <img class="hero" src="assets2/JDM.webp" alt="JDM" />
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">Contact</a>
+          <a href="signUp.html">Sign In</a>
         </div>
-        <p class="mp">$15.99</p>
-        <!--   THIS IS HERE SO YOU GUYS KNOW MY BUTTONS WORK IF NEEDED      -->
-        <a class="buy-button"
-          href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/31458132593204687567323762054544922945513441433473574696766688210870618554369">
-          Buy Now
-        </a>
       </div>
-      
-      <div class="card">
-        <div class="title">Classic Roll B</div>
-        <div class="image"><img src="assets/2.AVIF" alt="Classic Roll B" />
+    </nav>
+    <!-- VIDEO -->
+    <script>
+      var i = 0;
+      var images = [];
+      var time = 3000;
+
+      images[0] = `assets2/AA.jpeg`;
+      images[1] = `assets2/BB.jpeg`;
+      images[2] = `assets2/EE.jpeg`;
+
+      function changeIMG() {
+        document.slide.src = images[i];
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("changeIMG()", time);
+      }
+      window.onload = changeIMG;
+    </script>
+    <img name="slide" class="productSlide" />
+    <!-- PRODUCT  -->
+    <div class="products"></div>
+    <script src="script.js"></script>
+
+    <!-- FOOTER FOOTER FOOTER -->
+    <footer class="footer">
+      <div class="footerLeft">
+        <h2>JDM <span> Power </span></h2>
+        <hr />
+
+        <div class="footerLinks">
+          <a href="index.html">Home</a>
+          <a href="product.html">Product</a>
+          <a href="contact.html">Contact</a>
+          <a href="signUp.html">Sign Up</a>
         </div>
-        <p class="mp">$15.99</p>
-        <a class="buy-button">
-          Buy Now
-        </a>
       </div>
-
-      <div class="card">
-        <div class="title">Classic Roll C</div>
-        <div class="image"><img src="assets/3.AVIF" alt="Classic Roll C" />
+      <div class="footerCenter">
+        <div>
+          <p>1234 Red Ventures Drive</p>
+          <p>Charlotte, NC</p>
+          <hr />
+          <p>+1 (555-555-5555)</p>
         </div>
-        <p class=" mp">$15.99</p>
-        <a class="buy-button">
-          Buy Now
-        </a>
-      </div>
-
-      <div class="card">
-        <div class="title">Classic Roll D</div>
-        <div class="image"><img src="assets/4.AVIF" alt="Classic Roll D" />
+        <div>
+          <a href="mailto:support@JDMPOWER.com">support@JDMPOWER.com</a>
         </div>
-        <p class="mp">$15.99</p>
-        <a class="buy-button">
-          Buy Now
-        </a>
       </div>
-
-      <div class="card">
-        <div class="title">Delux Roll A</div>
-        <div class="image"><img src="assets/5.AVIF" alt="Delux Roll A" />
+      <div class="footerRight">
+        <p class="footerAbout">
+          We sell cars that go VROOM and SKRRRT. Lorem ipsum dolor sit amet,
+          consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
+          lacus vehicula sit amet. Lorem
+        </p>
+        <hr />
+        <div class="footerIcons">
+          <a href="https://www.youtube.com"
+            ><img src="assets2/youtube.AVIF" width="50px"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="assets2/insta.AVIF" width="50px"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="assets2/twitter.AVIF" width="50px"
+          /></a>
+          <a href="https://www.facebook.com"
+            ><img src="assets2/FB.AVIF" width="50px"
+          /></a>
         </div>
-        <p class="mp">$25.00</p>
-        <a class="buy-button">
-          Buy Now
-        </a>
       </div>
+    </footer>
 
-      <div class="card">
-        <div class="title">Delux Roll B</div>
-        <div class="image"><img src="assets/6.AVIF" alt="Delux Roll B" />
-        </div>
-        <p class="mp">$25.00</p>
-        <a class="buy-button">
-          Buy Now
-        </a>
-      </div>
-
-      <div class="card">
-        <div class="title">Delux Roll C </div>
-        <div class="image"><img src="assets/7.AVIF" alt="Delux Roll C" />
-        </div>
-        <p class="mp">$25.00</p>
-        <a class="buy-button">
-          Buy Now
-        </a>
-      </div>
-
-      <div class="card">
-        <div class="title">Delux Roll D</div>
-        <div class="image"><img src="assets/8.AVIF" alt="Delux Roll D" />
-        </div>
-        <p class="mp">$25.00</p>
-        <a class="buy-button">
-          Buy Now
-        </a>
-      </div>
-
-  </section>
-
-
-  <!--   FOOTER -->
-
-  <footer class="contactMe">
-    <a href="https://www.youtube.com"
-      ><img src="assets/youtube.AVIF" width="50px" alt="youtube"
-    /></a>
-    <a href="https://www.instagram.com/"
-      ><img src="assets/insta.AVIF" width="50px" alt="instagram"
-    /></a>
-    <a href="https://www.twitter.com"
-      ><img src="assets/twitter.AVIF" width="50px" alt="twitter"
-    /></a>
-    <a href="https://www.facebook.com"
-      ><img src="assets/FB.AVIF" width="50px" alt="facebook"
-    /></a>
-  </footer>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
